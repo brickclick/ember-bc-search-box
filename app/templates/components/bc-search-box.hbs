@@ -1,0 +1,20 @@
+
+<div class="bc-search-box">
+    {{input type="email" value=value name=name classNames="bc-search-box__field bc-search-box--selected" focus-in="fieldFocus"}}
+    {{#if didSearch}}
+        {{#if hasResults}}
+            <ul class="bc-search-box__results" >
+                {{#each searchResults as |result|}}
+                    <li class="bc-search-box__result">
+                        <span class="bc-search-box__result-name">{{result.name}}</span>
+                        <span class="bc-search-box__result-type">{{result.type}}</span>
+                    </li>
+                {{/each}}
+            </ul>
+        {{else}}
+            <div class="bc-search-box__results">
+                {{noResultsMessage}}
+            </div>
+        {{/if}}
+    {{/if}}
+</div>

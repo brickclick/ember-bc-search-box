@@ -1,7 +1,7 @@
 {
   "name": "ember-bc-search-box",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Quick-search box for BrickClick Admin",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,14 +11,15 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://bitbucket.org/brickclick/ember-bc-search-box.git",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "t3rminus",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
+	"connect-restreamer": "^1.0.2",
     "ember-cli": "0.2.3",
     "ember-cli-app-version": "0.3.3",
     "ember-cli-content-security-policy": "0.4.0",
@@ -31,7 +32,10 @@
     "ember-data": "1.0.0-beta.16.1",
     "ember-export-application-global": "^1.0.2",
     "ember-disable-prototype-extensions": "^1.0.0",
-    "ember-try": "0.0.4"
+    "ember-try": "0.0.4",
+	"express": "^4.12.3",
+	"glob": "^4.5.3",
+	"morgan": "^1.5.2"
   },
   "keywords": [
     "ember-addon"
